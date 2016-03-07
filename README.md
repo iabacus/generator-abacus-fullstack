@@ -3,7 +3,10 @@
 > Yeoman generator for creating MEAN stack applications, using MongoDB, Express, AngularJS, and Node - lets you quickly set up a project following best practices.
 
 ## Usage
-
+Install 'yo grunt-cli gulp-cli bower':
+'''
+Install npm install -g yo grunt-cli gulp-cli bower
+'''
 Install `generator-abacus-fullstack`:
 ```
 npm install -g generator-abacus-fullstack
