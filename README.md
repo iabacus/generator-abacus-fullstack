@@ -4,9 +4,9 @@
 
 ## Usage
 Install 'yo grunt-cli gulp-cli bower':
-'''
+```
 Install npm install -g yo grunt-cli gulp-cli bower
-'''
+```
 Install `generator-abacus-fullstack`:
 ```
 npm install -g generator-abacus-fullstack
