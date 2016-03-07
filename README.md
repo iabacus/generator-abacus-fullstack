@@ -60,21 +60,21 @@ A grunt task looks for new files in your `client/app` and `client/components` fo
 Available generators:
 
 * App
-    - [abacus](#app) (aka [abacus:app](#app))
+    - [abacus-fullstack](#app) (aka [abacus-fullstack:app](#app))
 * Server Side
-    - [abacus:endpoint](#endpoint)
+    - [abacus-fullstack:endpoint](#endpoint)
 * Client Side
-    - [abacus:route](#route)
-    - [abacus:controller](#controller)
-    - [abacus:filter](#filter)
-    - [abacus:directive](#directive)
-    - [abacus:service](#service)
-    - [abacus:provider](#service)
-    - [abacus:factory](#service)
-    - [abacus:decorator](#decorator)
+    - [abacus-fullstack:route](#route)
+    - [abacus-fullstack:controller](#controller)
+    - [abacus-fullstack:filter](#filter)
+    - [abacus-fullstack:directive](#directive)
+    - [abacus-fullstack:service](#service)
+    - [abacus-fullstack:provider](#service)
+    - [abacus-fullstack:factory](#service)
+    - [abacus-fullstack:decorator](#decorator)
 * Deployment
-    - [abacus:openshift](#openshift)
-    - [abacus:heroku](#heroku)
+    - [abacus-fullstack:openshift](#openshift)
+    - [abacus-fullstack:heroku](#heroku)
 
 ### App
 Sets up a new AngularJS + Express app, generating all the boilerplate you need to get started.
@@ -90,7 +90,7 @@ Generates a new API endpoint.
 
 Example:
 ```bash
-yo abacus:endpoint message
+yo abacus-fullstack:endpoint message
 [?] What will the url of your endpoint to be? /api/messages
 ```
 
@@ -107,7 +107,7 @@ Generates a new route.
 
 Example:
 ```bash
-yo abacus:route myroute
+yo abacus-fullstack:route myroute
 [?] Where would you like to create this route? client/app/
 [?] What will the url of your route be? /myroute
 ```
@@ -126,7 +126,7 @@ Generates a controller.
 
 Example:
 ```bash
-yo abacus:controller user
+yo abacus-fullstack:controller user
 [?] Where would you like to create this controller? client/app/
 ```
 
@@ -140,7 +140,7 @@ Generates a directive.
 
 Example:
 ```bash
-yo abacus:directive myDirective
+yo abacus-fullstack:directive myDirective
 [?] Where would you like to create this directive? client/app/
 [?] Does this directive need an external html file? Yes
 ```
@@ -156,7 +156,7 @@ Produces:
 
 Example:
 ```bash
-yo abacus:directive simple
+yo abacus-fullstack:directive simple
 [?] Where would you like to create this directive? client/app/
 [?] Does this directive need an external html file? No
 ```
@@ -171,7 +171,7 @@ Generates a filter.
 
 Example:
 ```bash
-yo abacus:filter myFilter
+yo abacus-fullstack:filter myFilter
 [?] Where would you like to create this filter? client/app/
 ```
 
@@ -185,7 +185,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo abacus:service myService
+yo abacus-fullstack:service myService
 [?] Where would you like to create this service? client/app/
 ```
 
@@ -202,7 +202,7 @@ Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo abacus:decorator serviceName
+yo abacus-fullstack:decorator serviceName
 [?] Where would you like to create this decorator? client/app/
 ```
 
@@ -214,7 +214,7 @@ Produces
 
 Deploying to OpenShift can be done in just a few steps:
 
-    yo abacus:openshift
+    yo abacus-fullstack:openshift
 
 A live application URL will be available in the output.
 
@@ -251,7 +251,7 @@ Commit and push the resulting build, located in your dist folder:
 
 Deploying to heroku only takes a few steps.
 
-    yo abacus:heroku
+    yo abacus-fullstack:heroku
 
 To work with your new heroku app using the command line, you will need to run any `heroku` commands from the `dist` folder.
 

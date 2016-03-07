@@ -23,7 +23,7 @@ describe('abacus generator', function () {
     gen.run({}, function () {
       var afGenerator;
       var deps = [path.join('../..', generatorType)];
-      afGenerator = helpers.createGenerator('abacus:' + generatorType, deps, [name]);
+      afGenerator = helpers.createGenerator('abacus-fullstack:' + generatorType, deps, [name]);
 
       helpers.mockPrompt(afGenerator, mockPrompt);
       afGenerator.run([], function () {
@@ -47,7 +47,7 @@ describe('abacus generator', function () {
         return done(err);
       }
 
-      gen = helpers.createGenerator('abacus:app', deps);
+      gen = helpers.createGenerator('abacus-fullstack:app', deps);
       gen.options['skip-install'] = true;
       done();
     }.bind(this));
@@ -98,7 +98,7 @@ describe('abacus generator', function () {
       it('should use existing config if available', function(done) {
         this.timeout(60000);
         fs.copySync(__dirname + '/fixtures/.yo-rc.json', __dirname + '/temp/.yo-rc.json');
-        var gen = helpers.createGenerator('abacus:app', [
+        var gen = helpers.createGenerator('abacus-fullstack:app', [
           '../../app',
           [
             helpers.createDummyGenerator(),

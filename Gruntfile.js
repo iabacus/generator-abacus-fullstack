@@ -137,7 +137,7 @@ module.exports = function (grunt) {
         ]
       ];
 
-      var gen = helpers.createGenerator('abacus:app', deps);
+      var gen = helpers.createGenerator('abacus-fullstack:app', deps);
 
       helpers.mockPrompt(gen, options);
       gen.run({}, function () {
