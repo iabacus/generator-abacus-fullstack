@@ -1,6 +1,6 @@
 {
   "name": "generator-abacus-fullstack ",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Yeoman generator for creating MEAN stack applications, using MongoDB, Express, AngularJS, and Node and modified generator-angular-fullstack",
   "keywords": [
     "yeoman-generator",
